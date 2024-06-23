@@ -25,6 +25,8 @@ public class DataInitializer implements CommandLineRunner {
         System.out.println("Id :"+emp2saved.getId());
 
 
+        System.out.println("");
+
         employeeRepository.findAll().forEach(emp->{
             System.out.println("Id : "+ emp.getId());
             System.out.println("First name : "+ emp.getFirstName());
