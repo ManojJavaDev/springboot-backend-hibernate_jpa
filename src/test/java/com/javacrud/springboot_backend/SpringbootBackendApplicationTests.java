@@ -17,7 +17,6 @@ class SpringbootBackendApplicationTests {
 	void testEmployeeRepository(){
 		long count = employeeRepository.count();
 		assertThat(count).isGreaterThan(0);
-
 	}
 
 	@Test

@@ -8,5 +8,3 @@ CREATE ROUTINE, ALTER ROUTINE, EVENT, TRIGGER ON `bookdb`.* TO `bookadmin`@`%`;
 CREATE USER IF NOT EXISTS `bookuser`@`%` IDENTIFIED WITH mysql_native_password BY 'password';
 GRANT SELECT, UPDATE, DELETE, INSERT, SHOW VIEW ON `bookdb`.* TO `bookuser`@`%`;
 FLUSH PRIVILEGES;
-
-

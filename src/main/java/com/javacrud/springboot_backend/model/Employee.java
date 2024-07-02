@@ -12,7 +12,7 @@ import lombok.*;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "FirstName")
@@ -27,5 +27,10 @@ public class Employee {
     @Column(name="age")
     private int age;
 
-
+    public Employee(String firstName, String lastName, String emailId, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.emailId = emailId;
+        this.age = age;
+    }
 }
